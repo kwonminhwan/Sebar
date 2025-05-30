@@ -140,8 +140,7 @@ Arduino IDE에서 `dynamixel_control.ino` 열기 → 보드 선택 → 업로드
 ## 📸 시연 영상
 
 > (선택) 데모 영상, GIF, 이미지 삽입 가능  
-> 예: `![demo](./images/demo.gif)`
-
+> https://youtu.be/3PRka_jRMKQ
 ---
 
 ## 🙋‍♀️ 제작자
