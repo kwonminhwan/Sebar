@@ -1,0 +1,57 @@
+# YOLOv5 requirements for ARM/Jetson and PyTorch 1.12.0 compatibility
+# Usage: pip install -r requirements.txt
+
+# Base system-level dependencies (설치는 apt로 사전 처리 필요)
+# - python3-pip
+# - python3-venv
+# - python3-dev
+# - libopenblas-base
+# - gfortran
+# - libopenmpi-dev
+# - liblapack-dev
+# - libatlas-base-dev
+
+# Core Python packages
+Cython
+numpy==1.19.4               # OpenBLAS 오류 회피
+pandas
+matplotlib==3.3.4           # Python 3.6 호환, ARM 환경용
+scipy
+scikit-image
+psutil
+dataclasses                 # Python 3.6용
+typing-extensions
+PyYAML
+requests
+tqdm
+seaborn
+future
+pillow>=7.0.0
+opencv-python
+opencv-contrib-python
+IPython
+
+# PyTorch 및 Torchvision은 별도 수동 설치 (whl 또는 소스 빌드)
+# torch==1.12.0
+# torchvision==0.13.0
+
+# Optional: YOLOv5 specific
+gitpython
+thop                        # FLOPs 계산
+ultralytics==8.2.34         # 최신 YOLOv5 호환
+
+# Build dependencies for torchvision (수동 설치시 필요 패키지)
+# - libjpeg-dev
+# - zlib1g-dev
+# - libavcodec-dev
+# - libavformat-dev
+# - libswscale-dev
+
+# Optional Export/Deploy (활성화 시 직접 추가)
+# onnx>=1.10.0
+# tensorflow>=2.4.0,<=2.13.1
+# coremltools>=6.0
+# openvino-dev>=2023.0
+# albumentations>=1.0.3
+# pycocotools>=2.0.6
+# setuptools>=65.0.0
